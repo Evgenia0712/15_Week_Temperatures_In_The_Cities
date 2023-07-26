@@ -23,14 +23,13 @@ function enterAvalue() {
 function show() {
   for (let i = 0; i < cities.length; i++) {      //&& i < temperatures.length
     const li = document.createElement('li');
-    li.textContent = (`В городе ${cities[i]} температура воздуха ${temperatures[i]} - °С`);
+    li.textContent = (`В городе ${cities[i]} температура воздуха - ${temperatures[i]} °С`);
     result.append(li);
   }
   let maxTemperature = Math.max.apply(Math, temperatures);
   let minTemperature = Math.min.apply(Math, temperatures);
   max.textContent = (`Максимальная температура - ${maxTemperature} °С`);
   min.textContent = (`Минимальная температура - ${minTemperature} °С`)
-  result.appendChild(li);
 }
 
 
